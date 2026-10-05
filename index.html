@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>School Events Chennai – Quizzes, Sports Days & Contests</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--bg:#FFFBF2;--surface:#fff;--ink:#1B1F4B;--muted:#55597F;--line:#E8E3D3;--yellow:#FFC93C;--coral:#FF5A5F;--teal:#12B5A6;--sky:#3D8BFD;--violet:#8B5CF6;--on-yellow:#1B1F4B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142E;--surface:#1D2048;--ink:#FFF6E0;--muted:#B7BAE0;--line:#33376B}}
+:root[data-theme="dark"]{--bg:#12142E;--surface:#1D2048;--ink:#FFF6E0;--muted:#B7BAE0;--line:#33376B}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6}
+h1,h2,h3,.disp{font-family:'Fredoka','DM Sans',system-ui,sans-serif;letter-spacing:-.01em;line-height:1.1}
+.card{background:var(--surface);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn{display:inline-block;font-weight:700;padding:.85rem 1.5rem;border:2px solid var(--ink);border-radius:999px;box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn-y{background:var(--yellow);color:var(--on-yellow)}.btn-w{background:var(--surface);color:var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.muted{color:var(--muted)}
+.tile{border:2px solid var(--ink);border-radius:20px;display:flex;align-items:flex-end;padding:1rem;font-weight:700;color:#1B1F4B;position:relative;overflow:hidden;min-height:150px}
+.tile .em{position:absolute;right:.6rem;top:.2rem;font-size:3.6rem;opacity:.9}
+.wiggle{animation:wig 2.4s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes wig{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@media (prefers-reduced-motion:reduce){.wiggle{animation:none}html{scroll-behavior:auto}}
+input,select,textarea{background:var(--bg);color:var(--ink);border:2px solid var(--ink);border-radius:14px;padding:.7rem .9rem;width:100%}
+.nav-bg{background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
+.brand-logo{width:148px;height:48px;object-fit:contain;object-position:left center;filter:drop-shadow(0 1px 0 rgba(27,31,75,.2))}
+.footer-logo{width:170px;height:56px;object-fit:contain;object-position:left center}
+.moment-card{background:var(--surface);border:2px solid var(--ink);border-radius:20px;box-shadow:4px 4px 0 var(--ink);overflow:hidden}
+.moment-card img{width:100%;height:210px;object-fit:cover;display:block;transition:transform .25s ease}
+.moment-card:hover img{transform:scale(1.04)}
+.moment-card figcaption{padding:.9rem 1rem;font-weight:700;color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header class="nav-bg sticky z-50" style="top:0;padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center" aria-label="Home"><img class="brand-logo" src="images/brand-logo.png" alt="Amore Architecture logo"></a>
+    <nav class="hidden md:flex gap-6 font-medium">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#clients">Partners</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="#contact" class="btn btn-y hidden sm:inline-block !py-2 !px-4">Book an event</a>
+      <button id="menuBtn" class="md:hidden w-10 h-10 border-2 rounded-xl text-xl" style="border-color:var(--ink)" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="hidden md:hidden px-4 pb-4 flex-col gap-3 font-medium" style="border-top:2px solid var(--ink)">
+    <a class="pt-3" href="#about">About</a><a href="#services">Services</a><a href="#clients">Partners</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact" class="btn btn-y text-center">Book an event</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-4 pt-12 pb-16 md:pt-20 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <h1 class="text-5xl sm:text-6xl font-bold">School events kids <span style="background:var(--yellow);color:#1B1F4B;padding:0 .25em;border-radius:12px;display:inline-block;transform:rotate(-2deg)">actually</span> look forward to.</h1>
+    <p class="muted text-lg mt-5 max-w-md">Quiz leagues, sports days, drawing contests and talent tests, planned and run end to end for schools across Chennai and Tamil Nadu.</p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#contact" class="btn btn-y">Plan your school's event</a>
+      <a href="#gallery" class="btn btn-w">See past events</a>
+    </div>
+    <p class="mt-6 text-sm muted">Trusted by 250+ schools · Run with leading newspapers</p>
+  </div>
+  <div class="relative h-[360px] sm:h-[420px]" aria-hidden="true">
+    <div class="card absolute left-0 top-4 w-[62%] rounded-3xl p-5 -rotate-3" style="background:var(--yellow);color:#1B1F4B">
+      <div class="disp text-xl font-bold">Inter-School Quiz</div>
+      <div class="text-sm mt-1">Round 3 · Science</div>
+      <div class="mt-4 flex gap-2"><span class="px-3 py-1 rounded-full bg-white text-sm font-bold border-2 border-[#1B1F4B]">St. Mary's 80</span><span class="px-3 py-1 rounded-full bg-white text-sm font-bold border-2 border-[#1B1F4B]">DAV 75</span></div>
+    </div>
+    <div class="card absolute right-0 top-28 w-[58%] rounded-3xl p-5 rotate-2" style="background:var(--teal);color:#fff">
+      <div class="disp text-xl font-bold">Sports Day</div>
+      <div class="text-sm mt-1">Relay · 4 × 100 m</div>
+      <div class="text-5xl mt-3 wiggle inline-block">🏃</div>
+    </div>
+    <div class="card absolute left-6 bottom-0 w-[55%] rounded-3xl p-5 -rotate-1" style="background:var(--coral);color:#fff">
+      <div class="disp text-xl font-bold">Art Contest</div>
+      <div class="text-sm mt-1">Theme: My Chennai</div>
+      <div class="text-4xl mt-2">🎨</div>
+    </div>
+    <div class="absolute right-4 bottom-6 text-6xl wiggle">🏆</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-16" style="background:var(--surface);border-block:2px solid var(--ink)">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-5 gap-10 items-center">
+    <div class="md:col-span-3">
+      <h2 class="text-4xl font-bold">We turn school days into big days.</h2>
+      <p class="muted mt-4 max-w-xl">Our team started in Chennai with one inter-school quiz and a borrowed microphone. Today our educators, coordinators and sports coaches plan competitions that are fair, safe and loud with cheering.</p>
+      <p class="muted mt-3 max-w-xl">We handle registrations, question papers, judges, staging, safety and prizes, so teachers can enjoy the day too. Our newspaper partnerships bring statewide coverage to every winner.</p>
+    </div>
+    <div class="md:col-span-2 grid grid-cols-2 gap-4">
+      <div class="card rounded-2xl p-4 text-center"><div class="disp text-4xl font-bold" style="color:var(--coral)">250+</div><div class="text-sm muted">Schools served</div></div>
+      <div class="card rounded-2xl p-4 text-center"><div class="disp text-4xl font-bold" style="color:var(--teal)">1,200</div><div class="text-sm muted">Events run</div></div>
+      <div class="card rounded-2xl p-4 text-center"><div class="disp text-4xl font-bold" style="color:var(--sky)">3 lakh</div><div class="text-sm muted">Students joined</div></div>
+      <div class="card rounded-2xl p-4 text-center"><div class="disp text-4xl font-bold" style="color:var(--violet)">12 yrs</div><div class="text-sm muted">In Chennai</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-4xl font-bold">What we run for your school</h2>
+  <p class="muted mt-3 max-w-lg">Pick a ready format or ask us to design something for your campus.</p>
+  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="card rounded-3xl p-6"><div class="w-14 h-14 rounded-2xl grid place-items-center text-3xl border-2" style="background:var(--yellow);border-color:var(--ink)">🧠</div><h3 class="text-2xl font-semibold mt-4">Quiz competitions</h3><p class="muted mt-2">Written rounds, buzzer finals and general-knowledge leagues for classes 4 to 12.</p></article>
+    <article class="card rounded-3xl p-6"><div class="w-14 h-14 rounded-2xl grid place-items-center text-3xl border-2" style="background:var(--sky);border-color:var(--ink)">📝</div><h3 class="text-2xl font-semibold mt-4">Olympiad-style tests</h3><p class="muted mt-2">Printed or on-screen tests in maths, science and English, with ranked results and certificates.</p></article>
+    <article class="card rounded-3xl p-6"><div class="w-14 h-14 rounded-2xl grid place-items-center text-3xl border-2" style="background:var(--teal);border-color:var(--ink)">🏅</div><h3 class="text-2xl font-semibold mt-4">Sports day games</h3><p class="muted mt-2">Track events, relays, kho-kho and fun games, with referees, first aid and equipment included.</p></article>
+    <article class="card rounded-3xl p-6"><div class="w-14 h-14 rounded-2xl grid place-items-center text-3xl border-2" style="background:var(--coral);border-color:var(--ink)">🎨</div><h3 class="text-2xl font-semibold mt-4">Drawing &amp; art contests</h3><p class="muted mt-2">Live painting, colouring and poster events with trained judges and a student gallery wall.</p></article>
+    <article class="card rounded-3xl p-6"><div class="w-14 h-14 rounded-2xl grid place-items-center text-3xl border-2" style="background:var(--violet);border-color:var(--ink)">🎤</div><h3 class="text-2xl font-semibold mt-4">Talent &amp; annual days</h3><p class="muted mt-2">Stage, sound, anchors and running order for dance, music and drama showcases.</p></article>
+    <article class="card rounded-3xl p-6"><div class="w-14 h-14 rounded-2xl grid place-items-center text-3xl border-2" style="background:#FF9F43;border-color:var(--ink)">📰</div><h3 class="text-2xl font-semibold mt-4">Media &amp; sponsor events</h3><p class="muted mt-2">Co-branded campaigns for newspapers and sponsors, with school reach across the state.</p></article>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" class="py-14" style="background:var(--yellow);color:#1B1F4B;border-block:2px solid var(--ink)">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold">Newspapers and sponsors we work with</h2>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white border-2 border-[#1B1F4B] rounded-2xl py-6 disp text-2xl font-bold" style="font-family:Georgia,serif">The Hindu</div>
+      <div class="bg-white border-2 border-[#1B1F4B] rounded-2xl py-6 disp text-2xl font-bold" style="color:#FF5A5F">Daily Chronicle</div>
+      <div class="bg-white border-2 border-[#1B1F4B] rounded-2xl py-6 disp text-2xl font-bold" style="color:#12B5A6">Madras Times</div>
+      <div class="bg-white border-2 border-[#1B1F4B] rounded-2xl py-6 disp text-2xl font-bold" style="color:#3D8BFD">Tamil Express</div>
+    </div>
+    <p class="mt-4 text-sm">Placeholder names. Replace with partner logos.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-4xl font-bold">Moments of Events</h2>
+  <p class="muted mt-3 max-w-lg">A glimpse of our International Yoga Day programme with students, teachers and organisers.</p>
+  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <figure class="moment-card"><img src="images/yoga-event-1.jpeg" alt="Students gathered for an International Yoga Day programme"><figcaption>Yoga Day programme</figcaption></figure>
+    <figure class="moment-card"><img src="images/yoga-event-2.jpeg" alt="School entrance decorated for International Yoga Day"><figcaption>Welcoming the event</figcaption></figure>
+    <figure class="moment-card"><img src="images/yoga-event-3.jpeg" alt="Teacher addressing students at the Yoga Day programme"><figcaption>Event briefing</figcaption></figure>
+    <figure class="moment-card"><img src="images/yoga-event-4.jpeg" alt="International Yoga Day banner at the school entrance"><figcaption>International Yoga Day</figcaption></figure>
+    <figure class="moment-card"><img src="images/yoga-event-5.jpeg" alt="Speakers at the International Yoga Day stage"><figcaption>On the stage</figcaption></figure>
+    <figure class="moment-card"><img src="images/yoga-event-6.jpeg" alt="Students attending the Yoga Day programme"><figcaption>Students together</figcaption></figure>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="reviews" class="py-16" style="background:var(--surface);border-block:2px solid var(--ink)">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold">What schools say</h2>
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <figure class="card rounded-3xl p-6"><div aria-label="5 stars">⭐⭐⭐⭐⭐</div><blockquote class="mt-3">Our students talked about the quiz for weeks. Registration, judging and prizes ran without a single hiccup.</blockquote><figcaption class="mt-4 font-bold">Mrs. Lakshmi Narayanan<div class="text-sm font-normal muted">Principal, Sunrise Matriculation, Adyar</div></figcaption></figure>
+      <figure class="card rounded-3xl p-6"><div aria-label="5 stars">⭐⭐⭐⭐⭐</div><blockquote class="mt-3">The sports day was safe, organised and fun. Our PT teachers finally got to enjoy the event.</blockquote><figcaption class="mt-4 font-bold">Mr. Arun Kumar<div class="text-sm font-normal muted">Sports Head, Green Valley School, Velachery</div></figcaption></figure>
+      <figure class="card rounded-3xl p-6"><div aria-label="5 stars">⭐⭐⭐⭐⭐</div><blockquote class="mt-3">The drawing contest drew 400 entries. The newspaper coverage made our young artists very proud.</blockquote><figcaption class="mt-4 font-bold">Ms. Priya Sundaram<div class="text-sm font-normal muted">Coordinator, Bright Minds Academy, Anna Nagar</div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+  <div>
+    <h2 class="text-4xl font-bold">Tell us about your event</h2>
+    <p class="muted mt-3 max-w-md">Share a few details and our team will reply within one working day with ideas and a quote.</p>
+    <ul class="mt-6 space-y-2 muted">
+      <li>📍 12, Anna Salai, Chennai 600002</li>
+      <li>📞 +91 98765 43210</li>
+      <li>✉️ hello@events.example</li>
+    </ul>
+  </div>
+  <form id="contactForm" class="card rounded-3xl p-6 space-y-4" novalidate>
+    <div><label for="n" class="font-bold text-sm">Your name</label><input id="n" required autocomplete="name"></div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><label for="e" class="font-bold text-sm">Email</label><input id="e" type="email" required autocomplete="email"></div>
+      <div><label for="p" class="font-bold text-sm">Phone</label><input id="p" type="tel" autocomplete="tel"></div>
+    </div>
+    <div><label for="t" class="font-bold text-sm">I'm a</label><select id="t"><option>School</option><option>Newspaper / media house</option><option>Sponsor</option></select></div>
+    <div><label for="m" class="font-bold text-sm">What would you like to organise?</label><textarea id="m" rows="4" required></textarea></div>
+    <button class="btn btn-y w-full" type="submit">Send enquiry</button>
+    <p id="msg" class="text-sm font-bold" role="status" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+
+<footer class="py-10" style="background:#1B1F4B;color:#FFF6E0;padding-bottom:calc(2.5rem + env(safe-area-inset-bottom,0px))">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-6 md:items-center justify-between">
+    <div><img class="footer-logo" src="images/brand-logo.png" alt="Amore Architecture logo"><p class="text-sm opacity-80 mt-1">School events, planned with care in Chennai.</p></div>
+    <nav class="flex flex-wrap gap-4 text-sm"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <p class="text-sm opacity-70">© 2026. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const btn=document.getElementById('menuBtn'),nav=document.getElementById('mobileNav');
+btn.addEventListener('click',()=>{const o=nav.classList.toggle('hidden');nav.classList.toggle('flex',!o);btn.setAttribute('aria-expanded',String(!o))});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.add('hidden');nav.classList.remove('flex');btn.setAttribute('aria-expanded','false')}));
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();const m=document.getElementById('msg');
+  const ok=n.value.trim()&&/\S+@\S+\.\S+/.test(document.getElementById('e').value)&&document.getElementById('m').value.trim();
+  m.style.color=ok?'var(--teal)':'var(--coral)';
+  m.textContent=ok?'Thanks! We will reply within one working day.':'Please add your name, a valid email and a short message.';
+  if(ok)e.target.reset();
+});
+</script>
+</body>
+</html>
